@@ -1,0 +1,126 @@
+.footer_bg{
+    background-color: #1B2551;
+    padding: 60px 0px;
+}
+.footer_section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff; 
+}
+.footer_section_one{
+    width: 22%;
+}
+.footer_section_two{
+    width: 22%;
+}
+.footer_section_two p{
+    text-align: start;
+    color: #D1D3DC;
+}
+.footer_section_three{
+    width: 22%;
+}
+.footer_section_three h6{
+    text-align: start;
+}
+.footer_section_three p{
+    text-align: start;
+    color: #D1D3DC;
+}
+.footer_section_four{
+    width: 14%;
+}
+.footer_section_four h6{
+    text-align: start;
+}
+.footer_section_four p{
+    text-align: start;
+    color: #D1D3DC;
+}
+.footer_icons{
+   display: flex;
+   justify-content: space-between;
+   width: 50%;
+}
+.google_app_store_logo{
+    /* position: relative;
+    top: -70px;
+    left: 350px; */
+    /* display: flex;
+    align-content: flex-end;
+    align-items: flex-end; */
+    margin-left: 50%;
+}
+.footer_uppersection{
+    background-color: #E9E9EA;
+    display: flex;
+}
+.footer_uppersection_child{
+    display: flex;
+    padding: 40px 0px;
+    margin: auto;
+}
+.footer_uppersection_child p{
+    margin-top: 15px;
+    margin-right: 15px;
+    color: #1A244F;
+    font-weight: 700;
+}
+.footer_uppersection_child_input{
+    padding: 5px 20px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.footer_uppersection_child_input input{
+    border: none;
+}
+@media screen and (max-width: 768px){
+     .footer_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+     }
+     .footer_section_one{
+        width: 50%;
+     }
+     .footer_section_two{
+        width: 50%;
+        margin-bottom: 40px;
+     }
+     .footer_section_two p{
+        text-align: center;
+     }
+     .footer_section_three{
+        width: 50%;
+        text-align: center;
+        margin-bottom: 40px;
+     }
+     .footer_section_three h6{
+        text-align: center;
+     }
+     .footer_section_three p{
+        text-align: center;
+     }
+     .footer_section_four{
+        width: 50%;
+        margin-bottom: 40px;
+     }
+     .footer_section_four h6{
+        text-align: center;
+     }
+     .footer_section_four p{
+        text-align: center;
+     }
+     .footer_icons {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: auto;
+    }
+     .google_app_store_logo{
+        margin: auto;
+    }
+}

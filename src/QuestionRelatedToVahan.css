@@ -1,0 +1,33 @@
+.question_related_to_vahan_bg{
+      margin-bottom: 80px;
+}
+.question_related_to_vahan_section{
+    text-align: start;
+}
+.question_related_to_vahan h2{
+    font-size: 55px;
+}
+.question_related_to_vahan_container{
+    width: 80%;
+    margin: auto;
+}
+.question_related_to_vahan_section_one{
+    padding: 20px;
+}
+.question_related_to_vahan_section_two{
+    padding: 20px;
+}
+.question_related_to_vahan_section_three{
+    padding: 20px;
+}
+.question_related_to_vahan_section_four{
+    padding: 20px;
+}
+.question_related_to_vahan_section_five{
+    padding: 20px;
+}
+@media screen and (max-width: 768px){
+    .question_related_to_vahan h2{
+        font-size: 38px;
+    }
+}

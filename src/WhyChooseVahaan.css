@@ -1,0 +1,173 @@
+.why_choose_vahan_bg_section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.why_choose_vahan_bg_section_one{
+    width: 30%;
+}
+.why_choose_vahan_bg_section_two{
+    width: 50%;
+}
+.why_choose_vahan_bg_section_one{
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+}
+.why_choose_vahan_bg_section_one_first{
+    border-left: 4px solid #F36E21;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    padding: 20px 30px;
+    width: 40%;
+}
+.why_choose_vahan_bg_section_one_first_image{
+      margin-right: 240px;
+}
+.why_choose_vahan_bg_section_one_first h2{
+    font-size: 22px;
+    text-align: start;
+}
+.why_choose_vahan_bg_section_one_first p{
+    font-size: 16px;
+    width: 70%;
+    text-align: left;
+}
+.why_choose_vahan_bg_section_one_second{
+    border-left: 4px solid #F36E21;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 40%;
+}
+.why_choose_vahan_bg_section_one_second_image{
+    margin-right: 240px;
+}
+.why_choose_vahan_bg_section_one_second h2{
+  font-size: 22px;
+  text-align: start;
+}
+.why_choose_vahan_bg_section_one_second p{
+  font-size: 16px;
+  width: 70%;
+  text-align: left;
+}
+
+.why_choose_vahan_bg_section_one_third{
+    border-left: 4px solid #F36E21;
+    padding: 20px;
+    width: 40%;
+}
+.why_choose_vahan_bg_section_one_third_image{
+    margin-right: 240px;
+}
+.why_choose_vahan_bg_section_one_third h2{
+  font-size: 22px;
+  text-align: start;
+}
+.why_choose_vahan_bg_section_one_third p{
+  font-size: 16px;
+  width: 70%;
+  text-align: left;
+}
+.why_choose_vahan_bg_section_one_fourth{
+    border-left: 4px solid #F36E21;
+    padding: 20px;
+    width: 40%;
+}
+.why_choose_vahan_bg_section_one_fourth_image{
+    margin-right: 240px;
+}
+.why_choose_vahan_bg_section_one_fourth h2{
+  font-size: 22px;
+  text-align: start;
+}
+.why_choose_vahan_bg_section_one_fourth p{
+  font-size: 16px;
+  width: 70%;
+  text-align: left;
+}
+.why_choose_vahan_bg_section_two{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.why_choose_vahan_bg_section_two h2{
+    color: #1B2551;
+    width: 100%;
+    font-size: 55px;
+    text-align: start;
+}
+.why_choose_vahan_bg_section_two h2 span{
+    border-bottom: 12px solid #F36E21;
+}
+.why_choose_vahan_bg_section_two p{
+    text-align: start;
+    margin-top: 50px;
+    color: #464D72;
+}
+.why_choose_vahan_bg_section_two button{
+    margin-top: 40px;
+    margin-right: 30px;
+    background-color: #F36E21;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+@media screen and (max-width: 768px){
+    .why_choose_vahan_bg_section{
+        display: block;
+    }
+    .why_choose_vahan_bg_section_one{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .why_choose_vahan_bg_section_one_first{
+        border-left: 4px solid #F36E21;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        padding: 20px 30px;
+        width: 80%;
+    }
+    .why_choose_vahan_bg_section_one_second{
+        border-left: 4px solid #F36E21;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        /* border: 2px solid red; */
+        padding: 20px 30px;
+        width: 80%;
+    }
+    .why_choose_vahan_bg_section_one_third{
+        border-left: 4px solid #F36E21;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        /* border: 2px solid red; */
+        padding: 20px 30px;
+        width: 80%;
+    }
+    .why_choose_vahan_bg_section_one_fourth{
+        border-left: 4px solid #F36E21;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        /* border: 2px solid red; */
+        padding: 20px 30px;
+        width: 80%;
+    }
+    .why_choose_vahan_bg_section_two{
+        width: 100%;
+    }
+    .why_choose_vahan_bg_section_two h2{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        font-size: 28px;
+    }
+    .why_choose_vahan_bg_section_two p{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .why_choose_vahan_bg_section_two button{
+        margin: 20px auto;
+    }
+}

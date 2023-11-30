@@ -1,0 +1,106 @@
+/* .navbar_list_bar{
+    margin: auto;
+}
+
+.navbar_list{
+   margin-top: 18px;
+   margin-left: 15px;
+}
+.icon_search{
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+.button_navbar_one{
+    margin-left: 80px;
+    border: 2px solid black;
+    padding-bottom: 5px;
+} */
+
+.navbar_list_bar{
+    margin: 0px auto;
+    padding:10px 0px;
+    display: flex;
+    align-items: center;
+}
+.navbar_list{
+    margin-right: 25px;
+ }
+ .icon_search{
+    margin-left: 40px;
+}
+.icon_search i{
+    font-size: 18px;
+}
+
+.button_navbar_one{
+     border: 2px solid #707792 !important;
+     margin-right: 20px;
+     padding: 5px 30px !important;
+     color: #374067 !important;
+     font-weight: 700 !important;
+     font-size: 20px !important;
+}
+.button_navbar_two{
+    border: 1px solid #F36E21 !important;
+     margin-right: 20px;
+     padding: 6px 30px !important;
+     background-color: #F36E21 !important;
+     color: #FFFFFF !important;
+     font-weight: 700 !important;
+     font-size: 20px !important;
+}
+.nav-list-bar{
+    padding-left:100px !important;
+}
+.header_about{
+    text-decoration: none;
+    color: #575757;
+}
+.header_about:active{
+    color: #000;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    .navbar_list{
+    margin-right: 10px;
+ }
+  .icon_search{
+    margin-left: 20px;
+}
+.button_navbar_one{
+    font-size: 15px !important;
+    padding: 10px 18px !important;
+}
+.button_navbar_two{
+    font-size: 15px !important;
+    padding: 10px 18px !important;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .button_navbar_one{
+        width: fit-content;
+        margin: auto;
+        font-size: 20px !important;
+        padding: 3px 40px !important;
+        margin-bottom: 10px;
+    }
+    .button_navbar_two{
+        width: fit-content;
+        margin: auto;
+        font-size: 20px !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .button_navbar_one{
+        width: fit-content;
+        margin: auto;
+        font-size: 20px !important;
+        padding: 3px 40px !important;
+        margin-bottom: 10px;
+    }
+    .button_navbar_two{
+        width: fit-content;
+        margin: auto;
+        font-size: 20px !important;
+    }
+}

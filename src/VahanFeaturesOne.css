@@ -1,0 +1,33 @@
+.vahan_features_one_bg{
+    padding-bottom: 120px;
+}
+.question_related_to_vahan{
+    padding:50px;
+    background-color: #FFFFFF;
+}
+.question_related_to_vahan  h2{
+    color: #1B2551;
+    font-weight: 700;
+    font-size: 52px;
+}
+.question_related_to_vahan  h2 span{
+    border-bottom: 12px solid #F36E21 ;
+}
+
+.vahan_features_one_section{
+    width: 80%;
+    margin: auto;
+    text-align: start;
+}
+.accordian_header{
+    padding: 20px;
+}
+.accordian_header h4{
+    color: #374067;
+    font-size: 22px;
+}
+
+.accordian_body p{
+    font-size: 16px;
+    padding:10px 20px;
+}
