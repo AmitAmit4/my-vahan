@@ -1,26 +1,10 @@
-/* .navbar_list_bar{
-    margin: auto;
-}
-
-.navbar_list{
-   margin-top: 18px;
-   margin-left: 15px;
-}
-.icon_search{
-    margin-left: 100px;
-    margin-bottom: 40px;
-}
-.button_navbar_one{
-    margin-left: 80px;
-    border: 2px solid black;
-    padding-bottom: 5px;
-} */
 
 .navbar_list_bar{
     margin: 0px auto;
     padding:10px 0px;
     display: flex;
     align-items: center;
+    font-family: sans-serif;
 }
 .navbar_list{
     margin-right: 25px;
@@ -38,16 +22,19 @@
      padding: 5px 30px !important;
      color: #374067 !important;
      font-weight: 700 !important;
-     font-size: 20px !important;
+     font-size: 16px !important;
+     font-family: sans-serif;
+     border-radius: 5px !important;
 }
 .button_navbar_two{
     border: 1px solid #F36E21 !important;
-     margin-right: 20px;
      padding: 6px 30px !important;
      background-color: #F36E21 !important;
      color: #FFFFFF !important;
      font-weight: 700 !important;
-     font-size: 20px !important;
+     font-size: 16px !important;
+     font-family: sans-serif;
+     border-radius: 5px !important;
 }
 .nav-list-bar{
     padding-left:100px !important;

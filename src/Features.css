@@ -102,23 +102,14 @@ align-items: center;
 .content_first_section h2{
     text-align: start;
 }
-/* .content_image_one{
-    border: 2px solid red;
-    width: 48%;
-    margin-right: 10px;
-}
-.content_image_two{
-    border: 2px solid red;
-    width: 48%;
-    margin-left: 10px;
-} */
+
 .content_first_section_input{
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
 }
 .content_first_section_input_one{
-    padding: 10px 5px;
+    padding: 10px 0px;
     width: 46%;
 }
 .content_first_section_input_two{
@@ -126,34 +117,38 @@ align-items: center;
     width: 46%;
 }
  .content_image_one{
-    width: 90%;
+    width: 100%;
     font-size: 20px;
 }
 .content_image_two{
-    width: 90%;
+    width: 100%;
     font-size: 20px;
 }
 .content_first_section h2{
-    padding: 15px;
+    padding: 15px 0px;
     color: #1B2551;
     font-size: 42px;
 }
+
 .feature_section_btn{
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
     background-color: #F36E21;
     padding: 10px;
     margin-top: 40px;
 }
-.feature_section_btn button{
-    background-color: #F36E21;
-    color: #ffffff;
-    font-weight: 500;
-    border: none;
-}
-.content_first_section P{
+.content_first_section .upload_your_car_image_btn{
     color: #F36E21;
-    text-align: end;
+    display: flex;
+    justify-content: end;
+    width: 100%;
     margin: 18px 0px;
-    font-size: 16px;
+    font-size: 18px;
+    border: none;
+    font-weight: 700;
 }
 .content_two_section_one_first{
     display: flex;
@@ -165,14 +160,16 @@ align-items: center;
     color: #ffffff;
     padding: 10px;
 }
+.content_two_section_one_first h3{
+    font-size: 24px;
+    font-weight: 400;
+}
 .content_two_bg{
     width: 80%;
     margin: auto;
     padding: 80px;
 }
-/* .content_two_section{
-    border: 2px solid blue;
-} */
+
 .content_two_section h2{
     text-align: left;
     font-size: 38px;
@@ -180,14 +177,14 @@ align-items: center;
     color: #1B2551;
 }
 .content_two_section p{
-    text-align: left;
-    font-size: 18px;
+    text-align: right;
+    font-size: 14px;
     font-weight: 400;
     color: #1B2551;
 }
 .content_two_section_one_second{
     width: 90%;
-    margin: auto;
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -195,26 +192,26 @@ align-items: center;
     bottom: 2px solid #F36E21;
 }
 .content_two_section_one_third button{
-    border: 2px soild #F36E21 !important;
+    border: 2px solid #F36E21 !important;
     width: 90%;
     padding: 10px 0px;
     color: #F36E21;
-    margin-top: 20px;
 }
 .content_two_section_btn{
     background-color: #F36E21;
     padding: 10px;
     margin-top: 50px;
-}
-.content_two_section_btn button{
-    background-color: #F36E21;
-    color: #ffffff;
-    font-weight: 500;
+    width: 100%;
     font-size: 18px;
+    color: #fff;
+    font-weight: 700;
     border: none;
 }
+
 .content_two_section_one_third button{
     border: 2px solid #F36E21 !important;
+    font-size: 14px;
+    font-weight:700;
 }
 .features_third_section_calender{
     width: 60%;
@@ -283,7 +280,6 @@ align-items: center;
     font-weight: 700;
     font-size: 18px;
     margin-top: 20px;
-    border-radius: 5px;
 }
 .nav_item .content_item{
     display: flex !important;
@@ -304,12 +300,6 @@ align-items: center;
 
 
 
-
-
-
-
-
-
 .features_third_section_calender h2{
       text-align: start;
       font-size: 38px;
@@ -322,7 +312,7 @@ align-items: center;
       color: #1B2551;
 }
 .features_third_section_calender_btn{
-    margin-top: 50px;
+      margin-top: 50px;
       background-color: #F36E21;
       width: 100%;   
       color: #ffffff;
@@ -331,29 +321,11 @@ align-items: center;
       font-weight: 700;
 }
 
-/* .react-calendar__tile react-calendar__month-view__days__day .react-calendar__month-view__days__day--neighboringMonth{
-      border: none;
-} */
-
-/* .features_third_section_calender{
-    border: none !important;
-} */
-
-/* .my_calender{
-    border:none !important;
-    background-color: #fff !important;
-} */
-
-/* .calendar{
-    border: none !important;
-    background-color: red;
-} */
 
 .react-calendar__month-view__days button{
     border: none;
 }
 
-/* .react-calendar__navigation__arrow  */
 .react-calendar__navigation__prev2-button button{
     border: none;
 }

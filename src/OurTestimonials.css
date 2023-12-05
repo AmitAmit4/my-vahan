@@ -1,5 +1,5 @@
 .our_testimonials_bg{
-    margin-bottom: 80px;
+    margin-bottom: 57px;
 }
 .our_testimonials_bg h2{
     font-size: 55px !important;
@@ -35,9 +35,14 @@
     color: #1B2551;
 }
 .our_testimonials_bg h2{
-    margin-top: 40px;
-    font-size: 38px;
+    margin-top: 10px;
+    font-size: 52px !important;
+    font-weight: 700;
 }
 .our_testimonials_bg h3{
-    font-size: 28px;
+    font-size: 52px;
+    font-weight: 500;
+}
+.owl-dots{
+    display: none;
 }

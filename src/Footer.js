@@ -8,7 +8,7 @@ import instagram from '../src/photo/vimeo-social-logo.svg';
 import combinedShape from '../src/photo/Combined Shape.svg';
 import Group459 from '../src/photo/Group 459.svg'
 import SendIcon from '../src/photo/Send Icon.svg'
-const FooterOne = () => {
+const Footer = () => {
   return (
     <>
       <div className='footer'>
@@ -61,4 +61,4 @@ const FooterOne = () => {
   )
 }
 
-export default FooterOne
+export default Footer

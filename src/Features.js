@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from "react";
+// import React from 'react';
 import carwash from '../src/photo/Group_445.png';
 import vector8_8 from '../src/photo/Vector 8_8.svg'
-import './Features.css';  // Assuming you have a CSS file for styling
+import './Features.css';  
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
@@ -9,8 +10,10 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Vector8 from '../src/photo/Vector 8 (1).svg';
 import image9 from '../src/photo/image 9.png';
-import { useState } from 'react';
+
 import Calendar from 'react-calendar';
+import Reactangle_193 from '../src/photo/Rectangl_193.svg';
+
 // import { Value } from 'react-calendar';
 
 
@@ -79,7 +82,9 @@ const Features = () => {
                     <div className='content_first_section'>
                        <h2>Add Your Car</h2>
                        <div className='content_first_section_input'>
+                      
                         <div className='content_first_section_input_one'>
+                      
                        <input type="text" placeholder='Car Name/Company' className='content_image content_image_one' />
                        </div>
                        <div className='content_first_section_input_two'>
@@ -87,13 +92,15 @@ const Features = () => {
                        </div>
                        </div>
                        <Image className='features_section_one_image' src={image9} fluid />
-                       <p>
+                       <button className='upload_your_car_image_btn'>
                         UPLOAD YOUR CAR IMAGE
-                       </p>
-                       <div className='feature_section_btn'>
+                       </button>
+                       {/* <div className='feature_section_btn'>
                        <button>CONTINUE</button>
-                       </div>
+                       </div> */}
+                       <button className='feature_section_btn'>CONTINUE</button>
                     </div>
+                  
                 </div>
                 </Tab.Pane>
             <Tab.Pane eventKey="second">
@@ -108,7 +115,7 @@ const Features = () => {
                         </div>
                         <div className='content_two_section_one_second'>
                             <p>Package Includes:</p>
-                            <p>Daily Car Wash</p>
+                            <p>Daily Car Wash <Image className='features_section_one_image' src={Reactangle_193} fluid /></p>
                         </div>
                         <div className='content_two_section_one_third'>
                             <button>Select This Plan</button>
@@ -122,8 +129,8 @@ const Features = () => {
                         <div className='content_two_section_one_second'>
                             <p>Package Includes:</p>
                             <div>
-                            <p>Daily Car Wash</p>
-                            <p>Weekly Vaccum</p>
+                            <p>Daily Car Wash <Image className='features_section_one_image' src={Reactangle_193} fluid /></p>
+                            <p>Weekly Vaccum <Image className='features_section_one_image' src={Reactangle_193} fluid /></p>
                             </div>
                             
                         </div>
@@ -139,9 +146,9 @@ const Features = () => {
                         <div className='content_two_section_one_second'>
                             <p>Package Includes:</p>
                             <div>
-                            <p>Daily Car Wash</p>
-                            <p>Weekly Vaccum</p>
-                            <p>Water Wash</p>
+                            <p>Daily Car Wash <Image className='features_section_one_image' src={Reactangle_193} fluid /></p>
+                            <p>Weekly Vaccum <Image className='features_section_one_image' src={Reactangle_193} fluid /></p>
+                            <p>Water Wash <Image className='features_section_one_image' src={Reactangle_193} fluid /></p>
                             </div>
                             
                         </div>
@@ -149,9 +156,8 @@ const Features = () => {
                             <button>Select This Plan</button>
                             </div>
                         </div>
-                        <div className='content_two_section_btn'>
-                            <button>CONTINUE</button>
-                            </div>
+                        
+                            <button className='content_two_section_btn'>CONTINUE</button>
                     </div>
                 </div>
             </Tab.Pane>

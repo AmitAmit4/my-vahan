@@ -1,80 +1,6 @@
-/* 
-.banner_content{
-    position:absolute;
-    bottom: -30px; 
-    left: 110px;  
-    display: flex;
-    color: #ffffff;
-}
-.banner_content_one{
-    width: 50%;
-    font-size: 18px;
-}
-.banner_content_one h2{
-    text-align: start;
-    font-size: 55px;
-    font-weight: 700;
-}
-.banner_content_one h6{
-    font-size: 55px;
-    text-align: start;
-    font-weight: 400;
-}
-.banner_content_one p{
-    margin-top: 32px;
-    font-size: 18px;
-    width: 77%;
-    text-align: start;
-}
-.banner_content_one_scanner{ 
-    font-size: 10px;
-    width: 250px;
-    margin-bottom: 20px;
-}
-.signup_at_vahan{
-    width: 380px;
-    background-color: #ffffff;
-    margin-left: 150px;
-    padding: 20px;
-    border-radius: 20px;
-}
-.signup_at_vahan h4{
-    font-size: 20px;
-    color: #1B2551;
-}
-.signup_at_vahan input{
-    margin-top:20px;
-    width: 90%;
-    padding: 8px 20px;
-    border-radius: 5px;
-}
-.signup_at_vahan .city_code{
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-between;
-}
-.signup_at_vahan .your_code{
-    width: 45%;
-}
-.signup_at_vahan .your_city{
-    width: 45%;
-}
 
-.signup_at_vahan button{
-    margin-top:25px;
-    width: 90%;
-    background-color: #F36E21;
-    color: #fff;
-    padding: 10px 5px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 20px;
-}
- */
  .banner_content{
     display: flex;
-    /* width: 80%; */
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -82,7 +8,6 @@
     margin: auto;
  }
  .banner_content_one{
-    /* width: 55%; */
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -90,18 +15,13 @@
     align-content: center;
 }
 .banner_content_two{
-    /* width: 50%; */
     font-size: 18px;
 }
 .banner_content_one h1{
     text-align: start;
     font-size: 55px;
 }
-/* .banner_content_one h1{
-    font-size: 48px;
-    text-align: start;
-    font-weight: 400;
-} */
+
 .banner_content_one p{
        color: #fff;
 }
@@ -121,7 +41,7 @@
     background-color: #ffffff;
     margin-left: 150px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .signup_at_vahan h4{
     font-size: 30px;
@@ -150,6 +70,8 @@
     width: 90%;
     background-color: #F36E21;
     color: #fff;
+    font-size: 18px;
+    font-weight:700;
     padding: 10px 5px;
     border-radius: 5px;
     border: none;
@@ -168,7 +90,7 @@
         display: flex;
         flex-direction: column;
     }
-    .practice_section{
+    .section_first{
         background-image: none;
     }
     .banner_content_one{
@@ -196,7 +118,7 @@
         display: flex;
         flex-direction: column;
     }
-    .practice_section{
+    .section_first{
         background-image: none;
     }
     .banner_content_one{
@@ -222,14 +144,14 @@
     .nav-list-bar{
         padding-left: 0px !important;
     }
-    .practice_section{
+    .section_first{
         padding-top: 30px;
     }
     .banner_content{
         display: flex;
         flex-direction: column;
     }
-    .practice_section{
+    .section_first{
         background-image: none;
     }
     .banner_content_one{
