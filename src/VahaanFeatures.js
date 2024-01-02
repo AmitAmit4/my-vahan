@@ -41,7 +41,7 @@ const VahaanFeatures = () => {
         <div className='vahan_performance_list container'>
             <div>
                 <h2>100K+</h2>
-                <p>Cars Listed On Vahan+</p>
+                <p>Cars Listed On the Vahan+</p>
             </div>
             <div>
                 <h2>80K+</h2>
