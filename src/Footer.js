@@ -1,13 +1,14 @@
-import React from 'react'
-import './Footer.css';
+import React from 'react';
+// import './Footer.css';
+import './style.css';
 import Image from 'react-bootstrap/Image';
 import Logo from '../src/photo/Logo.svg';
 import facebook from '../src/photo/facebook-logo-button.svg';
 import twitter from '../src/photo/twitter.svg';
 import instagram from '../src/photo/vimeo-social-logo.svg';
 import combinedShape from '../src/photo/Combined Shape.svg';
-import Group459 from '../src/photo/Group 459.svg'
-import SendIcon from '../src/photo/Send Icon.svg'
+import Group459 from '../src/photo/Group 459.svg';
+import SendIcon from '../src/photo/Send Icon.svg';
 const Footer = () => {
   return (
     <>

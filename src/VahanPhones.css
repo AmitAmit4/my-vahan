@@ -20,7 +20,7 @@
 .ellipse{
     width: 960px;
     height: 300px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
 }
 .group_two{
     position: absolute;

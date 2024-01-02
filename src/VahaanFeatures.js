@@ -1,5 +1,6 @@
 import React from 'react';
-import './VahaanFeatures.css';
+// import './VahaanFeatures.css';
+import './style.css';
 import Image from 'react-bootstrap/Image';
 import Reactangle_199 from '../src/photo/Rectangle 199.png';
 import Reactangle_200 from '../src/photo/Rectangle 200.png';

@@ -1,10 +1,11 @@
-import React from 'react'
-import './VahanPhones.css'
+import React from 'react';
+// import './VahanPhones.css';
+import './style.css';
 import Image from 'react-bootstrap/Image';
-import GooglePlay from '../src/photo/Google_Play_Badge_001eb0f465 1.svg'
-import AppleStore from '../src/photo/App_Store_Badge_f39b9659af 1.svg'
-import Group451 from '../src/photo/Group 451.svg'
-import VahanCarMobile from '../src/photo/vahan_car_mobile_ui.svg'
+import GooglePlay from '../src/photo/Google_Play_Badge_001eb0f465 1.svg';
+import AppleStore from '../src/photo/App_Store_Badge_f39b9659af 1.svg';
+import Group451 from '../src/photo/Group 451.svg';
+import VahanCarMobile from '../src/photo/vahan_car_mobile_ui.svg';
 // import Ellipse19 from '../src/photo/Ellipse 19.png'
 // import Group468 from '../src/photo/Group 468.png'
 const VahanPhones = () => {

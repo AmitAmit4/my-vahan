@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import icon_one from '../src/photo/Layer_1.svg';
-import './Header.css';
+// import './Header.css';
+import './style.css';
 
 function Header() {
   return (
@@ -18,6 +19,7 @@ function Header() {
           <Nav className="navbar_list_bar me-auto">
             <Nav.Link className='navbar_list active' ><Link to="/" className="header_about">About</Link></Nav.Link>
             <Nav.Link className='navbar_list' > <Link to="/feature" className="header_about">Features</Link></Nav.Link>
+            <Nav.Link className='navbar_list' > <Link to="/user" className="header_about">User</Link></Nav.Link>
             <Nav.Link className='navbar_list' href="#link">Pricing</Nav.Link>
             <Nav.Link className='navbar_list' href="#link">Products</Nav.Link>
             <Nav.Link className='navbar_list' href="#link">Contact Us</Nav.Link>

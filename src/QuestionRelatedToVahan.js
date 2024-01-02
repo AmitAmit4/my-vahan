@@ -1,12 +1,13 @@
-import React from 'react'
-import './QuestionRelatedToVahan.css'
+import React from 'react';
+// import './QuestionRelatedToVahan.css';
+import './style.css';
 const QuestionRelatedToVahan = () => {
   return (
     <>
       <div className='question_related_to_vahan_bg'>
          <h2>Questions related to Vahan+</h2>
          <div className='question_related_to_vahan_container'>
-        <div className='question_related_to_vahan_section'>
+          <div className='question_related_to_vahan_section'>
             <hr />
             <div className='question_related_to_vahan_section_one'>
                 <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h4>
@@ -29,9 +30,8 @@ const QuestionRelatedToVahan = () => {
             <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h4>
             </div>
             <hr />
-        </div>
-        </div>
-          
+          </div>
+        </div>     
       </div>
     </>
   )

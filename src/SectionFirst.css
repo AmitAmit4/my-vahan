@@ -137,7 +137,8 @@
 
     .signup_at_vahan{
         margin-left: 0px;
-        margin: 30px 0px;
+        margin: 30px auto;
+        width: 90%;
     }
 }
 @media screen and (max-width: 576px){

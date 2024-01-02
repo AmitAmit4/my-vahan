@@ -1,5 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
-import './VahanFeaturesOne.css'
+// import './VahanFeaturesOne.css';
+import './style.css';
 function VahanFeaturesOne() {
   return (
     <>

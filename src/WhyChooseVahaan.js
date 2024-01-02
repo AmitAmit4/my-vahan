@@ -1,7 +1,8 @@
 import React from 'react';
 import Frame66 from '../src/photo/Frame 66.svg';
 import Image from 'react-bootstrap/Image';
-import './WhyChooseVahaan.css';
+// import './WhyChooseVahaan.css';
+import './style.css';
 const WhyChooseVahaan = () => {
   return (
     <>

@@ -1,0 +1,60 @@
+
+.user-booking-record{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.user-booking-record p{
+    text-align: start;
+}
+.user-booking-record a{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+    font-size: 12px;
+}
+
+.user-total-booking{
+    background-color: #0895D9;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+.user-total-revenue{
+    background-color: #F6A41D;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+.user-total-debt{
+    background-color: #F0447E;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+.user-record-value{
+    display: flex;
+    justify-content: space-between;
+}
+.glaciar-national-park-text{
+    text-align: left;
+    margin-left: 10px;
+}
+.unated-states{
+    color: #A8B4C5;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:576px) {
+    .user-booking-record{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-total-revenue{
+        margin-bottom: 20px;
+    }
+    .user-total-booking{
+        margin-bottom: 20px;
+    }
+}

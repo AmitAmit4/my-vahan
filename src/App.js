@@ -5,6 +5,7 @@ import Features from './Features';
 import Header from './Header';
 import Home from './Home';
 import Footer from './Footer';
+import User from './User';
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
        <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/feature" element={<Features/>} />
+        <Route path="/user" element={<User/>} />
        </Routes>
        <Footer/>
-       </BrowserRouter>
+       </BrowserRouter> 
     </div>
   );
 }

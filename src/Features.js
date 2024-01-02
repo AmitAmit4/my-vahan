@@ -2,7 +2,8 @@ import React, { useState } from "react";
 // import React from 'react';
 import carwash from '../src/photo/Group_445.png';
 import vector8_8 from '../src/photo/Vector 8_8.svg'
-import './Features.css';  
+// import './Features.css';
+import './style.css';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
