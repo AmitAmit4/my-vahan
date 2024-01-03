@@ -58,6 +58,218 @@ function User() {
     fetchData();
   }, []);
 
+
+
+
+  const fetchDataCustomers = async () => {
+    try {
+      const queryParams = {
+        token: 'YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg',
+        // Add more parameters as needed
+      };
+
+      // Convert the query parameters to a URL-encoded string
+      const queryString = new URLSearchParams(queryParams).toString();
+
+      // Append the query string to the URL
+      const url = `http://65.1.77.233/vahanplus//customers.php?${queryString}`;
+
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      console.log(result.data);
+      setData(result.data);
+    } catch (error) {
+      console.log('Error fetching data:', error);
+    }
+  };
+
+  const handleCustomers = () => {
+    fetchDataCustomers();
+  };
+
+
+  
+
+
+
+  const fetchDataServices = async () => {
+    try {
+      const queryParams = {
+        token: 'YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg',
+        // Add more parameters as needed
+      };
+
+      // Convert the query parameters to a URL-encoded string
+      const queryString = new URLSearchParams(queryParams).toString();
+
+      // Append the query string to the URL
+      const url = `http://65.1.77.233/vahanplus//services.php?${queryString}`;
+
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      console.log(result.data);
+      setData(result.data);
+    } catch (error) {
+      console.log('Error fetching data:', error);
+    }
+  };
+
+  const handleServices = () => {
+    fetchDataServices();
+  };
+
+
+
+
+  const fetchDataStores = async () => {
+    try {
+      const queryParams = {
+        token: 'YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg',
+        // Add more parameters as needed
+      };
+
+      // Convert the query parameters to a URL-encoded string
+      const queryString = new URLSearchParams(queryParams).toString();
+
+      // Append the query string to the URL
+      const url = `http://65.1.77.233/vahanplus//stores.php?${queryString}`;
+
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      console.log(result.data);
+      setData(result.data);
+    } catch (error) {
+      console.log('Error fetching data:', error);
+    }
+  };
+
+  const handleStores = () => {
+    fetchDataStores();
+  };
+
+
+
+
+
+  const fetchDataBrands = async () => {
+    try {
+      const queryParams = {
+        token: 'YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg',
+        // Add more parameters as needed
+      };
+
+      // Convert the query parameters to a URL-encoded string
+      const queryString = new URLSearchParams(queryParams).toString();
+
+      // Append the query string to the URL
+      const url = `http://65.1.77.233/vahanplus//brands.php?${queryString}`;
+
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      console.log(result.data);
+      setData(result.data);
+    } catch (error) {
+      console.log('Error fetching data:', error);
+    }
+  };
+
+  const handleBrands = () => {
+    fetchDataBrands();
+  };
+
+
+
+
+  const fetchDataCleaners = async () => {
+    try {
+      const queryParams = {
+        token: 'YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg',
+        // Add more parameters as needed
+      };
+
+      // Convert the query parameters to a URL-encoded string
+      const queryString = new URLSearchParams(queryParams).toString();
+
+      // Append the query string to the URL
+      const url = `http://65.1.77.233/vahanplus//cleaners.php?${queryString}`;
+
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      console.log(result.data);
+      setData(result.data);
+    } catch (error) {
+      console.log('Error fetching data:', error);
+    }
+  };
+
+  const handleCleaners = () => {
+    fetchDataCleaners();
+  };
+
+
+
+  
+  const fetchDataPlans = async () => {
+    try {
+      const queryParams = {
+        token: 'YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg',
+        // Add more parameters as needed
+      };
+
+      // Convert the query parameters to a URL-encoded string
+      const queryString = new URLSearchParams(queryParams).toString();
+
+      // Append the query string to the URL
+      const url = `http://65.1.77.233/vahanplus//plans.php?${queryString}`;
+
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      console.log(result.data);
+      setData(result.data);
+    } catch (error) {
+      console.log('Error fetching data:', error);
+    }
+  };
+
+  const handlePlans = () => {
+    fetchDataPlans();
+  };
+
+
+
+
+
+
   return (
     <>
       {/* Your JSX code */}
@@ -65,22 +277,22 @@ function User() {
       <div className="container-fluid">
         <div className='row'>
             <div className='col-md-1 col-2' style={{borderRight:"1px solid #E9EEF5",position:"fixed"}}>
-                <p className='my-2'>
+                <p className='my-2' onClick={handleCustomers}>
                     <img src={HomeIcon} alt="" width={"40px"} />    
                 </p>
-                <p className='my-2'>
+                <p className='my-2' onClick={handleServices}>
                     <img src={GiftIcon} alt="" width={"40px"} />    
                 </p>
-                <p className='my-2'>
+                <p className='my-2' onClick={handleStores}>
                     <img src={FourSquare} alt="" width={"40px"} />    
                 </p>
-                <p className='my-2'>
+                <p className='my-2' onClick={handleBrands}>
                     <img src={VerticalDot} alt="" width={"40px"} />    
                 </p>
-                <p className='my-2'>
+                <p className='my-2' onClick={handleCleaners}>
                     <img src={ThreeBall} alt="" width={"40px"} />    
                 </p>
-                <p className='my-2'>
+                <p className='my-2' onClick={handlePlans}>
                     <img src={Setting} alt="" width={"40px"} />    
                 </p>
                 
@@ -345,9 +557,6 @@ function User() {
   );
 }
 
+
 export default User;
-
-
-
-
 
