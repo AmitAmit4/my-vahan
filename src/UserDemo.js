@@ -29,29 +29,34 @@ function User() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-
+        // Your query parameters
         const queryParams = {
-            token: 'YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg',
-            // Add more parameters as needed
-          };
-  
-          // Convert the query parameters to a URL-encoded string
-          const queryString = new URLSearchParams(queryParams).toString();
-  
-          // Append the query string to the URL
-          const url = `http://65.1.77.233/vahanplus/customers.php?${queryString}`;
-  
-          const response = await fetch(url);
+          // Other query parameters if needed
+          token: "YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg",
+        };
+
+        // Convert the query parameters to a URL-encoded string
+        const queryString = new URLSearchParams(queryParams).toString();
+
+        // Append the query string to the URL
+        const url = `http://65.1.77.233/vahanplus/customers.php?${queryString}`;
+
+        const response = await fetch(url, {
+          method: 'GET',
+          headers: {
+            accept: 'application/json',
+          },
+        });
 
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
 
         const result = await response.json();
-        console.log(result.data);
-        setData(result.data);
+        console.log(result);
+        setData(result);
       } catch (error) {
-        console.log('Error fetching data:', error);
+        console.error('Error fetching data:', error);
       }
     };
 
