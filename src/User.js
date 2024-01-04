@@ -16,6 +16,7 @@ import FourSquare from './photo/four-square.jpg';
 import VerticalDot from './photo/vertical-dot-icon.png';
 import ThreeBall from './photo/threeball.jpg';
 import Setting from './photo/setting.png';
+import DataTable from 'react-data-table-component';
 // import './User.css';
 import './style.css';
 
@@ -25,6 +26,7 @@ import './style.css';
 function User() {
   const [data, setData] = useState([]);
 //   const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -267,6 +269,17 @@ function User() {
 
 
 
+  const columns = [
+    { name: 'ID', selector: 'id', sortable: true },
+    { name: 'Name', selector: 'name', sortable: true },
+    { name: 'Mobile', selector: 'mobile', sortable: true },
+    { name: 'Society', selector: 'society', sortable: true },
+    { name: 'City', selector: 'city', sortable: true },
+    { name: 'Pincode', selector: 'pincode', sortable: true },
+    { name: 'Status', selector: 'status', sortable: true },
+    { name: 'Date Added', selector: 'date_added', sortable: true },
+    { name: 'Last Modified', selector: 'last_modified', sortable: true },
+  ];
 
 
 
@@ -277,22 +290,22 @@ function User() {
       <div className="container-fluid">
         <div className='row'>
             <div className='col-md-1 col-2' style={{borderRight:"1px solid #E9EEF5",position:"fixed"}}>
-                <p className='my-2' onClick={handleCustomers}>
+                <p className='my-2' onClick={handleCustomers} style={{cursor:'pointer'}}>
                     <img src={HomeIcon} alt="" width={"40px"} />    
                 </p>
-                <p className='my-2' onClick={handleServices}>
+                <p className='my-2' onClick={handleServices} style={{cursor:'pointer'}}>
                     <img src={GiftIcon} alt="" width={"40px"} />    
                 </p>
-                <p className='my-2' onClick={handleStores}>
+                <p className='my-2' onClick={handleStores} style={{cursor:'pointer'}}>
                     <img src={FourSquare} alt="" width={"40px"} />    
                 </p>
-                <p className='my-2' onClick={handleBrands}>
+                <p className='my-2' onClick={handleBrands} style={{cursor:'pointer'}}>
                     <img src={VerticalDot} alt="" width={"40px"} />    
                 </p>
-                <p className='my-2' onClick={handleCleaners}>
+                <p className='my-2' onClick={handleCleaners} style={{cursor:'pointer'}}>
                     <img src={ThreeBall} alt="" width={"40px"} />    
                 </p>
-                <p className='my-2' onClick={handlePlans}>
+                <p className='my-2' onClick={handlePlans} style={{cursor:'pointer'}}>
                     <img src={Setting} alt="" width={"40px"} />    
                 </p>
                 
@@ -365,11 +378,35 @@ function User() {
                     </div>
                 </div> */}
 
+                
+
+
+              <div className='container mt-5 mb-5'>
+                <DataTable
+                  title="Data Table"
+                  columns={columns}
+                  data={data}
+                  pagination
+                  highlightOnHover
+                />
+              </div>
+
+
 
 
                 <div className='container mt-5 mb-5'>
                     <div className='table-responsive'>
                         <table class="table" width={"80%"}>
+                          {/* <thead>
+                            <tr>
+                              <td>id</td>
+                              <td>name</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </thead> */}
                             <tbody>
 
                             {/* {data.map((item) => (
@@ -388,7 +425,7 @@ function User() {
 
                         
 
-                            {Array.isArray(data) && data.map((item) => (
+                            {/* {Array.isArray(data) && data.map((item) => (
                                 <tr key={item.id}>
                                     <td>{item.id}</td>
                                     <td>{item.name}</td>
@@ -400,7 +437,7 @@ function User() {
                                     <td>{item.date_added}</td>
                                     <td>{item.last_modified}</td>
                                 </tr>
-                            ))}
+                            ))} */}
 
 
                                 {/* <tr>
