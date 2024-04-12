@@ -10,7 +10,7 @@ import Tahiti from './photo/tahiti.jpg';
 import Argentine from './photo/argentine-patagonia.jpg';
 import Amalfi from './photo/amalfi-coast.jpg';
 import Great from './photo/great-barrier-reef.jpg';
-import HomeIcon from './photo/home-icon.png'; 
+import HomeIcon from './photo/home-icon.png';
 import GiftIcon from './photo/gift-icon.png';
 import FourSquare from './photo/four-square.jpg';
 import VerticalDot from './photo/vertical-dot-icon.png';
@@ -25,25 +25,24 @@ import './style.css';
 
 function User() {
   const [data, setData] = useState([]);
-//   const [loading, setLoading] = useState(true);
-
+  const [columns, setColumns] = useState([])
+  //   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
 
         const queryParams = {
-            token: 'YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg',
-            // Add more parameters as needed
-          };
-  
-          // Convert the query parameters to a URL-encoded string
-          const queryString = new URLSearchParams(queryParams).toString();
-  
-          // Append the query string to the URL
-          const url = `http://65.1.77.233/vahanplus/customers.php?${queryString}`;
-  
-          const response = await fetch(url);
+          token: 'YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg',
+        };
+
+        // Convert the query parameters to a URL-encoded string
+        const queryString = new URLSearchParams(queryParams).toString();
+
+        // Append the query string to the URL
+        const url = `http://65.1.77.233/vahanplus/customers.php?${queryString}`;
+
+        const response = await fetch(url);
 
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -52,6 +51,17 @@ function User() {
         const result = await response.json();
         console.log(result.data);
         setData(result.data);
+        setColumns([
+          { name: 'ID', selector: 'id', sortable: true },
+          { name: 'Name', selector: 'name', sortable: true },
+          { name: 'Mobile', selector: 'mobile', sortable: true },
+          { name: 'Society', selector: 'society', sortable: true },
+          { name: 'City', selector: 'city', sortable: true },
+          { name: 'Pincode', selector: 'pincode', sortable: true },
+          { name: 'Status', selector: 'status', sortable: true },
+          { name: 'Date Added', selector: 'date_added', sortable: true },
+          { name: 'Last Modified', selector: 'last_modified', sortable: true },
+        ]);
       } catch (error) {
         console.log('Error fetching data:', error);
       }
@@ -67,7 +77,6 @@ function User() {
     try {
       const queryParams = {
         token: 'YqxnVdCSCGqANyYmLmtkdDhTOlUHYkeviILAiytTQPtjgzGkunNMcdVKCYcEcApEZQoEUiAkJKHviJISvmZXBoKYmlpLJEuUg',
-        // Add more parameters as needed
       };
 
       // Convert the query parameters to a URL-encoded string
@@ -85,6 +94,17 @@ function User() {
       const result = await response.json();
       console.log(result.data);
       setData(result.data);
+      setColumns([
+        { name: 'ID', selector: 'id', sortable: true },
+        { name: 'Name', selector: 'name', sortable: true },
+        { name: 'Mobile', selector: 'mobile', sortable: true },
+        { name: 'Society', selector: 'society', sortable: true },
+        { name: 'City', selector: 'city', sortable: true },
+        { name: 'Pincode', selector: 'pincode', sortable: true },
+        { name: 'Status', selector: 'status', sortable: true },
+        { name: 'Date Added', selector: 'date_added', sortable: true },
+        { name: 'Last Modified', selector: 'last_modified', sortable: true },
+      ]);
     } catch (error) {
       console.log('Error fetching data:', error);
     }
@@ -95,7 +115,7 @@ function User() {
   };
 
 
-  
+
 
 
 
@@ -121,6 +141,16 @@ function User() {
       const result = await response.json();
       console.log(result.data);
       setData(result.data);
+      setColumns([
+        { name: 'UID', selector: 'uid', sortable: true },
+        { name: 'Store Id', selector: 'store_id', sortable: true },
+        { name: 'Service Name', selector: 'service_name', sortable: true },
+        { name: 'Service Desc', selector: 'service_desc', sortable: true },
+        { name: 'Mode', selector: 'mode', sortable: true },
+        { name: 'Status', selector: 'status', sortable: true },
+        { name: 'Date Added', selector: 'date_added', sortable: true },
+        { name: 'Last Modified', selector: 'last_modified', sortable: true },
+      ]);
     } catch (error) {
       console.log('Error fetching data:', error);
     }
@@ -155,6 +185,21 @@ function User() {
       const result = await response.json();
       console.log(result.data);
       setData(result.data);
+      setColumns([
+        { name: 'ID', selector: 'id', sortable: true },
+        { name: 'UID', selector: 'uid', sortable: true },
+        { name: 'Store Name', selector: 'store_name', sortable: true },
+        { name: 'Address', selector: 'address', sortable: true },
+        { name: 'City', selector: 'city', sortable: true },
+        { name: 'State', selector: 'state', sortable: true },
+        { name: 'Country', selector: 'country', sortable: true },
+        { name: 'Pincode', selector: 'pincode', sortable: true },
+        { name: 'Lattitude', selector: 'lattitude', sortable: true },
+        { name: 'Longitude', selector: 'longitude', sortable: true },
+        { name: 'Status', selector: 'status', sortable: true },
+        { name: 'Date Added', selector: 'date_added', sortable: true },
+        { name: 'Last Modified', selector: 'last_modified', sortable: true },
+      ]);
     } catch (error) {
       console.log('Error fetching data:', error);
     }
@@ -190,6 +235,16 @@ function User() {
       const result = await response.json();
       console.log(result.data);
       setData(result.data);
+      setColumns([
+        { name: 'ID', selector: 'id', sortable: true },
+        { name: 'UID', selector: 'uid', sortable: true },
+        { name: 'Name', selector: 'name', sortable: true },
+        { name: 'Logo', selector: 'logo', sortable: true },
+        { name: 'Type', selector: 'type', sortable: true },
+        { name: 'Status', selector: 'status', sortable: true },
+        { name: 'Date Added', selector: 'date_added', sortable: true },
+        { name: 'Last Modified', selector: 'last_modified', sortable: true },
+      ]);
     } catch (error) {
       console.log('Error fetching data:', error);
     }
@@ -224,6 +279,15 @@ function User() {
       const result = await response.json();
       console.log(result.data);
       setData(result.data);
+      setColumns([
+        { name: 'ID', selector: 'id', sortable: true },
+        { name: 'UID', selector: 'uid', sortable: true },
+        { name: 'Name', selector: 'name', sortable: true },
+        { name: 'Mobile', selector: 'mobile', sortable: true },
+        { name: 'Status', selector: 'status', sortable: true },
+        { name: 'Date Added', selector: 'date_added', sortable: true },
+        { name: 'Last Modified', selector: 'last_modified', sortable: true },
+      ]);
     } catch (error) {
       console.log('Error fetching data:', error);
     }
@@ -235,7 +299,7 @@ function User() {
 
 
 
-  
+
   const fetchDataPlans = async () => {
     try {
       const queryParams = {
@@ -258,6 +322,17 @@ function User() {
       const result = await response.json();
       console.log(result.data);
       setData(result.data);
+      setColumns([
+        { name: 'ID', selector: 'id', sortable: true },
+        { name: 'UID', selector: 'uid', sortable: true },
+        { name: 'Name', selector: 'name', sortable: true },
+        { name: 'Description', selector: 'description', sortable: true },
+        { name: 'Type', selector: 'type', sortable: true },
+        { name: 'Amount', selector: 'amount', sortable: true },
+        { name: 'Status', selector: 'status', sortable: true },
+        { name: 'Date Added', selector: 'date_added', sortable: true },
+        { name: 'Last Modified', selector: 'last_modified', sortable: true },
+      ]);
     } catch (error) {
       console.log('Error fetching data:', error);
     }
@@ -269,17 +344,7 @@ function User() {
 
 
 
-  const columns = [
-    { name: 'ID', selector: 'id', sortable: true },
-    { name: 'Name', selector: 'name', sortable: true },
-    { name: 'Mobile', selector: 'mobile', sortable: true },
-    { name: 'Society', selector: 'society', sortable: true },
-    { name: 'City', selector: 'city', sortable: true },
-    { name: 'Pincode', selector: 'pincode', sortable: true },
-    { name: 'Status', selector: 'status', sortable: true },
-    { name: 'Date Added', selector: 'date_added', sortable: true },
-    { name: 'Last Modified', selector: 'last_modified', sortable: true },
-  ];
+
 
 
 
@@ -289,69 +354,69 @@ function User() {
 
       <div className="container-fluid">
         <div className='row'>
-            <div className='col-md-1 col-2' style={{borderRight:"1px solid #E9EEF5",position:"fixed"}}>
-                <p className='my-2' onClick={handleCustomers} style={{cursor:'pointer'}}>
-                    <img src={HomeIcon} alt="" width={"40px"} />    
-                </p>
-                <p className='my-2' onClick={handleServices} style={{cursor:'pointer'}}>
-                    <img src={GiftIcon} alt="" width={"40px"} />    
-                </p>
-                <p className='my-2' onClick={handleStores} style={{cursor:'pointer'}}>
-                    <img src={FourSquare} alt="" width={"40px"} />    
-                </p>
-                <p className='my-2' onClick={handleBrands} style={{cursor:'pointer'}}>
-                    <img src={VerticalDot} alt="" width={"40px"} />    
-                </p>
-                <p className='my-2' onClick={handleCleaners} style={{cursor:'pointer'}}>
-                    <img src={ThreeBall} alt="" width={"40px"} />    
-                </p>
-                <p className='my-2' onClick={handlePlans} style={{cursor:'pointer'}}>
-                    <img src={Setting} alt="" width={"40px"} />    
-                </p>
-                
-            </div>
-            <div className='col-md-11 col-10' style={{marginLeft:"100px"}}>        
-                <div className='container mt-4'>
-                    <Navbar className="bg-body-tertiary justify-content-between container px-3">
-                        <div>Travel History</div>
-                        <Form inline>
-                            <Row>
-                            <Col xs="auto">
-                                <Form.Control
-                                type="text"
-                                placeholder="Search"
-                                className=" mr-sm-2"
-                                />
-                            </Col>
-                            </Row>
-                        </Form>
-                    </Navbar>
-                    <div className='user-booking-record mt-4'>
-                        <div className='user-total-booking'>
-                            <p>TOTAL BOOKING</p>
-                            <div className='user-record-value'>
-                                <p className='m-0'>31,556</p>
-                                <a href="">Get Report</a>
-                            </div>
-                        </div>
-                        <div className='user-total-revenue'>
-                            <p>TOTAL REVENUE</p>
-                            <div className='user-record-value'>
-                                <p className='m-0'>$61,556</p>
-                                <a href="">Get Report</a>
-                            </div>
-                        </div>
-                        <div className='user-total-debt'>
-                            <p>TOTAL DEBT</p>
-                            <div className='user-record-value'>
-                                <p className='m-0'>$12,556</p>
-                                <a href="">Get Report</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div className='col-md-1 col-2' style={{ borderRight: "1px solid #E9EEF5", position: "fixed" }}>
+            <p className='my-2' onClick={handleCustomers} style={{ cursor: 'pointer' }}>
+              <img src={HomeIcon} alt="" width={"40px"} />
+            </p>
+            <p className='my-2' onClick={handleServices} style={{ cursor: 'pointer' }}>
+              <img src={GiftIcon} alt="" width={"40px"} />
+            </p>
+            <p className='my-2' onClick={handleStores} style={{ cursor: 'pointer' }}>
+              <img src={FourSquare} alt="" width={"40px"} />
+            </p>
+            <p className='my-2' onClick={handleBrands} style={{ cursor: 'pointer' }}>
+              <img src={VerticalDot} alt="" width={"40px"} />
+            </p>
+            <p className='my-2' onClick={handleCleaners} style={{ cursor: 'pointer' }}>
+              <img src={ThreeBall} alt="" width={"40px"} />
+            </p>
+            <p className='my-2' onClick={handlePlans} style={{ cursor: 'pointer' }}>
+              <img src={Setting} alt="" width={"40px"} />
+            </p>
 
-                {/* <div className="container-fluid">
+          </div>
+          <div className='col-md-11 col-10' style={{ marginLeft: "100px" }}>
+            <div className='container mt-4'>
+              <Navbar className="bg-body-tertiary justify-content-between container px-3">
+                <div>Travel History</div>
+                <Form inline>
+                  <Row>
+                    <Col xs="auto">
+                      <Form.Control
+                        type="text"
+                        placeholder="Search"
+                        className=" mr-sm-2"
+                      />
+                    </Col>
+                  </Row>
+                </Form>
+              </Navbar>
+              <div className='user-booking-record mt-4'>
+                <div className='user-total-booking'>
+                  <p>TOTAL BOOKING</p>
+                  <div className='user-record-value'>
+                    <p className='m-0'>31,556</p>
+                    <a href="">Get Report</a>
+                  </div>
+                </div>
+                <div className='user-total-revenue'>
+                  <p>TOTAL REVENUE</p>
+                  <div className='user-record-value'>
+                    <p className='m-0'>$61,556</p>
+                    <a href="">Get Report</a>
+                  </div>
+                </div>
+                <div className='user-total-debt'>
+                  <p>TOTAL DEBT</p>
+                  <div className='user-record-value'>
+                    <p className='m-0'>$12,556</p>
+                    <a href="">Get Report</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="container-fluid">
                           
                     <div className='container mt-5 mb-5'>
                         <div className='table-responsive'>
@@ -378,26 +443,26 @@ function User() {
                     </div>
                 </div> */}
 
-                
-
-
-              <div className='container mt-5 mb-5'>
-                <DataTable
-                  title="Data Table"
-                  columns={columns}
-                  data={data}
-                  pagination
-                  highlightOnHover
-                />
-              </div>
 
 
 
+            <div className='container mt-5 mb-5'>
+              <DataTable
+                title="Data Table"
+                columns={columns}
+                data={data}
+                pagination
+                highlightOnHover
+              />
+            </div>
 
-                <div className='container mt-5 mb-5'>
-                    <div className='table-responsive'>
-                        <table class="table" width={"80%"}>
-                          {/* <thead>
+
+
+
+            <div className='container mt-5 mb-5'>
+              <div className='table-responsive'>
+                <table class="table" width={"80%"}>
+                  {/* <thead>
                             <tr>
                               <td>id</td>
                               <td>name</td>
@@ -407,25 +472,9 @@ function User() {
                               <td></td>
                             </tr>
                           </thead> */}
-                            <tbody>
+                  <tbody>
 
-                            {/* {data.map((item) => (
-                                <tr key={item.id}>
-                                    <td>{item.id}</td>
-                                    <td>{item.name}</td>
-                                    <td>{item.mobile}</td>
-                                    <td>{item.society}</td>
-                                    <td>{item.city}</td>
-                                    <td>{item.pincode}</td>
-                                    <td>{item.status}</td>
-                                    <td>{item.date_added}</td>
-                                    <td>{item.last_modified}</td>
-                                </tr>
-                            ))} */}
-
-                        
-
-                            {/* {Array.isArray(data) && data.map((item) => (
+                    {/* {data.map((item) => (
                                 <tr key={item.id}>
                                     <td>{item.id}</td>
                                     <td>{item.name}</td>
@@ -440,7 +489,23 @@ function User() {
                             ))} */}
 
 
-                                {/* <tr>
+
+                    {/* {Array.isArray(data) && data.map((item) => (
+                                <tr key={item.id}>
+                                    <td>{item.id}</td>
+                                    <td>{item.name}</td>
+                                    <td>{item.mobile}</td>
+                                    <td>{item.society}</td>
+                                    <td>{item.city}</td>
+                                    <td>{item.pincode}</td>
+                                    <td>{item.status}</td>
+                                    <td>{item.date_added}</td>
+                                    <td>{item.last_modified}</td>
+                                </tr>
+                            ))} */}
+
+
+                    {/* <tr>
                                     <td>
                                         <div className='glaciar-national-park d-flex'>
                                             <div className='glaciar-national-park-image'>
@@ -582,14 +647,14 @@ function User() {
                                 </tr> */}
 
 
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                  </tbody>
+                </table>
+              </div>
             </div>
+          </div>
         </div>
-    </div>  
-     
+      </div>
+
     </>
   );
 }
