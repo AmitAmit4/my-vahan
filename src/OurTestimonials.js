@@ -14,7 +14,10 @@ const OurTestimonials = () => {
        <h2>Our Testimonials</h2>
        <h3>What Our Clients Are <span>Saying</span></h3>
     </div>
-    <OwlCarousel className='owl-theme' loop items={2} center={true} margin={10} nav>
+    <OwlCarousel className='owl-theme' loop items={2} center={true} margin={10} nav  responsive={{
+    0: { items: 1 }, // Show one item below 576px
+    576: { items: 2 } // Show two items for screens 576px and above
+  }}>
     <div class='item'>
         <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
         <div className='our_testimonials_section_image'>
